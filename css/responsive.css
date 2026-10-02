@@ -1,0 +1,121 @@
+/* Soluzione qui */
+
+@media screen and (min-width:768px) {
+
+    #topbar {
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-start;
+    }
+
+    main {
+        padding: 48px;
+    }
+
+    .recipe-origin {
+        display: inline;
+    }
+
+    .recipe-name {
+        font-size: 2.0em;
+    }
+
+    .quick-notes ul {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+        gap: 15px;
+    }
+
+    .btn {
+        padding: 10px 50px;
+    }
+
+    .ads {
+        display: inline;
+        margin-top: 30px;
+    }
+
+
+    .presentation img {
+        float: left;
+        margin-right: 20px;
+        max-width: 40%;
+        height: auto;
+
+    }
+
+}
+
+@media screen and (min-width:992px) {
+
+    .recipe-name {
+        font-size: 2.6em;
+    }
+
+    div .recipe-card {
+        display: flex;
+        justify-content: space-between;
+        align-items: stretch;
+        width: 100%;
+
+    }
+
+
+    .recipe-video {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex: 1;
+    }
+
+    .recipe-video iframe {
+        width: 100%;
+        height: auto;
+        aspect-ratio: 16 / 9;
+        border: 0;
+
+    }
+
+    .recipe-info {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .social-networks {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 12px;
+        padding: 15px 0;
+    }
+
+    .social-networks .btn {
+        display: inline-flex;
+        align-items: center;
+        gap: 8px;
+        padding: 10px 16px;
+        border: none;
+        border-radius: 6px;
+        color: #010101;
+        font-family: sans-serif;
+        font-weight: 600;
+        cursor: pointer;
+        transition: opacity 0.2s
+    }
+
+    .social-networks .btn .label {
+        display: inline !important;
+        visibility: visible !important;
+        white-space: nowrap;
+    }
+
+    footer {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+
+}
